@@ -217,9 +217,3 @@ void Vect<T>::sort(T *begin, T *end, bool (*compare)(T, T)) {
     sort(right + 1, end, compare);
   }
 }
-
-int main() {
-  Vect<int> v = {142, 142, 5124, 5, 3, 212, 45, 121, 4};
-  v.sort(v.begin(), v.end());
-  std::cout << v << std::endl;
-}
